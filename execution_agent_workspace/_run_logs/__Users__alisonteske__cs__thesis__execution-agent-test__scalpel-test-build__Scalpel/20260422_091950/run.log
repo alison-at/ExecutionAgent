@@ -1,0 +1,63 @@
+09:19:50 | INFO  | execution_agent | ================================================================================
+09:19:50 | INFO  | execution_agent | PREPARATION PHASE - Collecting context and building main prompt
+09:19:50 | INFO  | execution_agent | ================================================================================
+09:19:50 | INFO  | execution_agent | Project: /Users/alisonteske/cs/thesis/execution-agent-test/scalpel-test-build/Scalpel
+09:19:50 | INFO  | execution_agent | Repo:    https://github.com/SMAT-Lab/Scalpel
+09:19:50 | INFO  | execution_agent | Model:   openrouter/qwen/qwen3-next-80b-a3b-instruct:free
+09:19:50 | INFO  | execution_agent | Knowledge Model: gpt-5-mini
+09:19:50 | INFO  | execution_agent | Run dir: execution_agent_workspace/_run_logs/__Users__alisonteske__cs__thesis__execution-agent-test__scalpel-test-build__Scalpel/20260422_091950
+09:19:50 | INFO  | execution_agent | Loading prompt templates...
+09:19:50 | INFO  | execution_agent | Initializing models...
+09:19:50 | INFO  | execution_agent | Registering tools...
+09:19:50 | INFO  | execution_agent | Building repository context (cloning repo, finding workflows, requirements, README)...
+09:19:50 | INFO  | execution_agent.context | Repository already exists at /Users/alisonteske/cs/thesis/execution-agent-test/scalpel-test-build/Scalpel
+09:19:50 | INFO  | litellm_model | [QUERY] Starting query with deadline=600s, model=openrouter/qwen/qwen3-next-80b-a3b-instruct:free, messages=1
+09:19:50 | INFO  | litellm_model | [QUERY] Calling _query()...
+09:19:50 | INFO  | litellm_model | Querying LLM (model=openrouter/qwen/qwen3-next-80b-a3b-instruct:free, timeout=300s, messages=1)
+09:19:50 | INFO  | litellm_model | [THREAD-TIMEOUT] Starting LLM call with thread timeout. litellm_timeout=300s, thread_timeout=330s, model=openrouter/qwen/qwen3-next-80b-a3b-instruct:free, messages=1
+09:19:50 | INFO  | litellm_model | [THREAD-TIMEOUT] Starting worker thread...
+09:19:50 | INFO  | litellm_model | [THREAD-TIMEOUT] Calling thread.join(timeout=330s)...
+09:19:51 | INFO  | litellm_model | [THREAD-TIMEOUT] Thread finished after 5.0s of waiting
+09:19:51 | INFO  | litellm_model | [THREAD-TIMEOUT] thread.join() returned after 0.30s. thread.is_alive()=False, completed=True, thread_internal_elapsed=0.30s
+09:19:51 | INFO  | litellm_model | [THREAD-TIMEOUT] Raising captured error: RateLimitError
+09:19:51 | WARNING | litellm_model | Retrying minisweagent.models.litellm_model.LitellmModel._query in 4 seconds as it raised RateLimitError: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"qwen/qwen3-next-80b-a3b-instruct:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Venice","is_byok":false}},"user_id":"user_3CeIq9RyWw1apEcjh4lD8t3BJgR"}.
+09:19:55 | INFO  | litellm_model | Querying LLM (model=openrouter/qwen/qwen3-next-80b-a3b-instruct:free, timeout=300s, messages=1)
+09:19:55 | INFO  | litellm_model | [THREAD-TIMEOUT] Starting LLM call with thread timeout. litellm_timeout=300s, thread_timeout=330s, model=openrouter/qwen/qwen3-next-80b-a3b-instruct:free, messages=1
+09:19:55 | INFO  | litellm_model | [THREAD-TIMEOUT] Starting worker thread...
+09:19:55 | INFO  | litellm_model | [THREAD-TIMEOUT] Calling thread.join(timeout=330s)...
+09:19:55 | INFO  | litellm_model | [THREAD-TIMEOUT] Thread finished after 5.0s of waiting
+09:19:55 | INFO  | litellm_model | [THREAD-TIMEOUT] thread.join() returned after 0.18s. thread.is_alive()=False, completed=True, thread_internal_elapsed=0.17s
+09:19:55 | INFO  | litellm_model | [THREAD-TIMEOUT] Raising captured error: RateLimitError
+09:19:55 | WARNING | litellm_model | Retrying minisweagent.models.litellm_model.LitellmModel._query in 4 seconds as it raised RateLimitError: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"qwen/qwen3-next-80b-a3b-instruct:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Venice","is_byok":false}},"user_id":"user_3CeIq9RyWw1apEcjh4lD8t3BJgR"}.
+09:19:59 | INFO  | litellm_model | Querying LLM (model=openrouter/qwen/qwen3-next-80b-a3b-instruct:free, timeout=300s, messages=1)
+09:19:59 | INFO  | litellm_model | [THREAD-TIMEOUT] Starting LLM call with thread timeout. litellm_timeout=300s, thread_timeout=330s, model=openrouter/qwen/qwen3-next-80b-a3b-instruct:free, messages=1
+09:19:59 | INFO  | litellm_model | [THREAD-TIMEOUT] Starting worker thread...
+09:19:59 | INFO  | litellm_model | [THREAD-TIMEOUT] Calling thread.join(timeout=330s)...
+09:19:59 | INFO  | litellm_model | [THREAD-TIMEOUT] Thread finished after 5.0s of waiting
+09:19:59 | INFO  | litellm_model | [THREAD-TIMEOUT] thread.join() returned after 0.14s. thread.is_alive()=False, completed=True, thread_internal_elapsed=0.14s
+09:19:59 | INFO  | litellm_model | [THREAD-TIMEOUT] Raising captured error: RateLimitError
+09:19:59 | WARNING | litellm_model | Retrying minisweagent.models.litellm_model.LitellmModel._query in 4 seconds as it raised RateLimitError: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"qwen/qwen3-next-80b-a3b-instruct:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Venice","is_byok":false}},"user_id":"user_3CeIq9RyWw1apEcjh4lD8t3BJgR"}.
+09:20:03 | INFO  | litellm_model | Querying LLM (model=openrouter/qwen/qwen3-next-80b-a3b-instruct:free, timeout=300s, messages=1)
+09:20:03 | INFO  | litellm_model | [THREAD-TIMEOUT] Starting LLM call with thread timeout. litellm_timeout=300s, thread_timeout=330s, model=openrouter/qwen/qwen3-next-80b-a3b-instruct:free, messages=1
+09:20:03 | INFO  | litellm_model | [THREAD-TIMEOUT] Starting worker thread...
+09:20:03 | INFO  | litellm_model | [THREAD-TIMEOUT] Calling thread.join(timeout=330s)...
+09:20:03 | INFO  | litellm_model | [THREAD-TIMEOUT] Thread finished after 5.0s of waiting
+09:20:03 | INFO  | litellm_model | [THREAD-TIMEOUT] thread.join() returned after 0.17s. thread.is_alive()=False, completed=True, thread_internal_elapsed=0.17s
+09:20:03 | INFO  | litellm_model | [THREAD-TIMEOUT] Raising captured error: RateLimitError
+09:20:03 | WARNING | litellm_model | Retrying minisweagent.models.litellm_model.LitellmModel._query in 8 seconds as it raised RateLimitError: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"qwen/qwen3-next-80b-a3b-instruct:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Venice","is_byok":false}},"user_id":"user_3CeIq9RyWw1apEcjh4lD8t3BJgR"}.
+09:20:11 | INFO  | litellm_model | Querying LLM (model=openrouter/qwen/qwen3-next-80b-a3b-instruct:free, timeout=300s, messages=1)
+09:20:11 | INFO  | litellm_model | [THREAD-TIMEOUT] Starting LLM call with thread timeout. litellm_timeout=300s, thread_timeout=330s, model=openrouter/qwen/qwen3-next-80b-a3b-instruct:free, messages=1
+09:20:11 | INFO  | litellm_model | [THREAD-TIMEOUT] Starting worker thread...
+09:20:11 | INFO  | litellm_model | [THREAD-TIMEOUT] Calling thread.join(timeout=330s)...
+09:20:11 | INFO  | litellm_model | [THREAD-TIMEOUT] Thread finished after 5.0s of waiting
+09:20:11 | INFO  | litellm_model | [THREAD-TIMEOUT] thread.join() returned after 0.22s. thread.is_alive()=False, completed=True, thread_internal_elapsed=0.22s
+09:20:11 | INFO  | litellm_model | [THREAD-TIMEOUT] Raising captured error: RateLimitError
+09:20:11 | WARNING | litellm_model | Retrying minisweagent.models.litellm_model.LitellmModel._query in 16 seconds as it raised RateLimitError: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"qwen/qwen3-next-80b-a3b-instruct:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Venice","is_byok":false}},"user_id":"user_3CeIq9RyWw1apEcjh4lD8t3BJgR"}.
+09:20:27 | INFO  | litellm_model | Querying LLM (model=openrouter/qwen/qwen3-next-80b-a3b-instruct:free, timeout=300s, messages=1)
+09:20:27 | INFO  | litellm_model | [THREAD-TIMEOUT] Starting LLM call with thread timeout. litellm_timeout=300s, thread_timeout=330s, model=openrouter/qwen/qwen3-next-80b-a3b-instruct:free, messages=1
+09:20:27 | INFO  | litellm_model | [THREAD-TIMEOUT] Starting worker thread...
+09:20:27 | INFO  | litellm_model | [THREAD-TIMEOUT] Calling thread.join(timeout=330s)...
+09:20:28 | INFO  | litellm_model | [THREAD-TIMEOUT] Thread finished after 5.0s of waiting
+09:20:28 | INFO  | litellm_model | [THREAD-TIMEOUT] thread.join() returned after 0.34s. thread.is_alive()=False, completed=True, thread_internal_elapsed=0.33s
+09:20:28 | INFO  | litellm_model | [THREAD-TIMEOUT] Raising captured error: RateLimitError
+09:20:28 | WARNING | litellm_model | Retrying minisweagent.models.litellm_model.LitellmModel._query in 32 seconds as it raised RateLimitError: litellm.RateLimitError: RateLimitError: OpenrouterException - {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"qwen/qwen3-next-80b-a3b-instruct:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Venice","is_byok":false}},"user_id":"user_3CeIq9RyWw1apEcjh4lD8t3BJgR"}.

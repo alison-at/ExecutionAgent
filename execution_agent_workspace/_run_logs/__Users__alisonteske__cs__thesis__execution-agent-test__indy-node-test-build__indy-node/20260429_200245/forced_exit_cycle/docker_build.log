@@ -1,0 +1,5 @@
+STDOUT:
+
+
+STDERR:
+ERROR: failed to build: invalid tag "forced_exit_/Users/alisonteske/cs/thesis/execution-agent-test/indy-node-test-build/indy-node_c309a302": invalid reference format

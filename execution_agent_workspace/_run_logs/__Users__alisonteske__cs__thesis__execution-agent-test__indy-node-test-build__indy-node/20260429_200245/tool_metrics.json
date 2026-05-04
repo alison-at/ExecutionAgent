@@ -1,0 +1,97 @@
+{
+  "write_to_file": {
+    "total_calls": 40,
+    "successful_calls": 3,
+    "failed_calls": 37,
+    "success_rate_percent": 7.5,
+    "total_duration_seconds": 1504.01,
+    "avg_duration_seconds": 37.6,
+    "recent_errors": [
+      {
+        "time": 1777510435.738125,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777510340-6fe5c73d\n\nDetails:\nComplete Docker build log:\n\n[20:52:20] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 95.37619996070862
+      },
+      {
+        "time": 1777510527.09683,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777510476-0be34c16\n\nDetails:\nComplete Docker build log:\n\n[20:54:36] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 50.516167879104614
+      },
+      {
+        "time": 1777510608.428022,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777510559-1f58b68e\n\nDetails:\nComplete Docker build log:\n\n[20:55:59] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 48.57263422012329
+      },
+      {
+        "time": 1777514753.691701,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777514720-ff81d01a\n\nDetails:\nComplete Docker build log:\n\n[22:05:20] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 33.474153995513916
+      },
+      {
+        "time": 1777514831.414858,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777514795-f4576a5b\n\nDetails:\nComplete Docker build log:\n\n[22:06:35] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 35.59587097167969
+      },
+      {
+        "time": 1777514973.0226262,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777514906-183bb672\n\nDetails:\nComplete Docker build log:\n\n[22:08:26] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 66.1228518486023
+      },
+      {
+        "time": 1777515047.644066,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777515017-cc5fcb6a\n\nDetails:\nComplete Docker build log:\n\n[22:10:17] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 30.5770320892334
+      },
+      {
+        "time": 1777515127.8555279,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777515094-7a60a296\n\nDetails:\nComplete Docker build log:\n\n[22:11:34] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 33.065855979919434
+      },
+      {
+        "time": 1777515205.89094,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777515171-c23c28a7\n\nDetails:\nComplete Docker build log:\n\n[22:12:51] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 33.99717879295349
+      },
+      {
+        "time": 1777515306.825223,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777515241-ec51a5f4\n\nDetails:\nComplete Docker build log:\n\n[22:14:01] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 65.32833504676819
+      }
+    ]
+  },
+  "linux_terminal": {
+    "total_calls": 18,
+    "successful_calls": 16,
+    "failed_calls": 2,
+    "success_rate_percent": 88.89,
+    "total_duration_seconds": 51.36,
+    "avg_duration_seconds": 2.853,
+    "recent_errors": [
+      {
+        "time": 1777507696.889347,
+        "error": "Output in terminal after executing the command:\n\u2018apt-cache\u2019 is not permitted. Allowed commands at this point are: cat, find, grep, head, less, ls, more, tail, tree. You would have access to more comma",
+        "duration": 0.0011980533599853516
+      },
+      {
+        "time": 1777514880.782485,
+        "error": "Output in terminal after executing the command:\n\u2018docker\u2019 is not permitted. Allowed commands at this point are: cat, find, grep, head, less, ls, more, tail, tree. You would have access to more commands",
+        "duration": 0.04823589324951172
+      }
+    ]
+  },
+  "read_file": {
+    "total_calls": 1,
+    "successful_calls": 0,
+    "failed_calls": 1,
+    "success_rate_percent": 0.0,
+    "total_duration_seconds": 0.05,
+    "avg_duration_seconds": 0.052,
+    "recent_errors": [
+      {
+        "time": 1777514852.666055,
+        "error": "\u274c Failed to read file: /app/indy_node/requirements.txt\n\nDetails:\nFileNotFoundError: [Errno 2] No such file or directory: '/app/indy_node/requirements.txt'\n\nWhy this might happen:\n- The path is wrong.\n",
+        "duration": 0.05224013328552246
+      }
+    ]
+  }
+}

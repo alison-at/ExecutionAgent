@@ -1,0 +1,92 @@
+{
+  "write_to_file": {
+    "total_calls": 19,
+    "successful_calls": 6,
+    "failed_calls": 13,
+    "success_rate_percent": 31.58,
+    "total_duration_seconds": 307.09,
+    "avg_duration_seconds": 16.163,
+    "recent_errors": [
+      {
+        "time": 1777499764.966662,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777499734-cb742fb3\n\nDetails:\nComplete Docker build log:\n\n[17:55:35] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 29.993854999542236
+      },
+      {
+        "time": 1777499809.160414,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777499806-399ceb01\n\nDetails:\nComplete Docker build log:\n\n[17:56:46] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 2.6823370456695557
+      },
+      {
+        "time": 1777499833.9989781,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777499829-7138608b\n\nDetails:\nComplete Docker build log:\n\n[17:57:09] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 4.893218755722046
+      },
+      {
+        "time": 1777499870.250958,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777499868-168c34b7\n\nDetails:\nComplete Docker build log:\n\n[17:57:48] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 2.267422914505005
+      },
+      {
+        "time": 1777500193.137742,
+        "error": "\u274c Cannot write a Dockerfile after the container is running. You cannot stop the running container. Try to fix the issue inside the container via terminal. You cannot run docker commands.",
+        "duration": 5.030632019042969e-05
+      },
+      {
+        "time": 1777500282.54028,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777500254-b1ad19b9\n\nDetails:\nComplete Docker build log:\n\n[18:04:14] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 27.756489038467407
+      },
+      {
+        "time": 1777500334.0998158,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777500330-c388fe39\n\nDetails:\nComplete Docker build log:\n\n[18:05:30] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 3.4722959995269775
+      },
+      {
+        "time": 1777500375.329498,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777500370-2ae10bb5\n\nDetails:\nComplete Docker build log:\n\n[18:06:10] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 4.955070972442627
+      },
+      {
+        "time": 1777500402.074238,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777500399-a11c77d9\n\nDetails:\nComplete Docker build log:\n\n[18:06:39] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 2.995488166809082
+      },
+      {
+        "time": 1777500430.3605602,
+        "error": "\u274c Build failed for image: toolindy-node_image:executionagent-1777500426-98ad16bd\n\nDetails:\nComplete Docker build log:\n\n[18:07:06] Starting build: context='/Users/alisonteske/cs/thesis/execution-agent-",
+        "duration": 3.495253801345825
+      }
+    ]
+  },
+  "linux_terminal": {
+    "total_calls": 38,
+    "successful_calls": 34,
+    "failed_calls": 4,
+    "success_rate_percent": 89.47,
+    "total_duration_seconds": 888.3,
+    "avg_duration_seconds": 23.376,
+    "recent_errors": [
+      {
+        "time": 1777489569.145887,
+        "error": "Error: Tilde (~) expansion is not supported in this environment. Please use absolute paths instead.",
+        "duration": 0.2681698799133301
+      },
+      {
+        "time": 1777490706.541919,
+        "error": "Error: Tilde (~) expansion is not supported in this environment. Please use absolute paths instead.",
+        "duration": 0.534001350402832
+      },
+      {
+        "time": 1777499621.926729,
+        "error": "Output in terminal after executing the command:\n\u2018docker\u2019 is not permitted. Allowed commands at this point are: cat, find, grep, head, less, ls, more, tail, tree. You would have access to more commands",
+        "duration": 0.021507978439331055
+      },
+      {
+        "time": 1777500350.243177,
+        "error": "Output in terminal after executing the command:\n\u2018apt-cache\u2019 is not permitted. Allowed commands at this point are: cat, find, grep, head, less, ls, more, tail, tree. You would have access to more comma",
+        "duration": 0.025613069534301758
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+----- message[0] role=user -----
+Now, you have to summarize and extract important information from the output of the last command.
+
+Ensure accuracy and relevance, such as software versions, tool names, or lists of requirements.
+
+Your summary and extracted information (extracted dependencies, relevant installation commands, and important links) should have always the following JSON format:
+
+{
+    "summary": "... put summary here...e.g, a possible summary of 'ls' command would be: Project contains `README.rst`, `Dockerfile`, `pyproject.toml`... ",
+    "Setup details:": "Relevant dependencies: ... put newly inferred dependencies... e.g, command results shows that Python3.11 is necessary, or Java 17 is required instead of java 11. \nImportant commands: ...put the list of newly iferred commands that related to the process... e.g, executing init is required before... \nImportant files: ...put the list of files that are highlighted to be important... e.g, the results shows that the file... should be checked...",
+    "Meaningful next setps": "... Based on the result of the command and history of other commands put what would be the next 2 or 3 steps and why they matter in the grand scheme of setting up and installing the project"
+}
+
+Here is the result of the last command, fill in the json dictionary above from the information mentioned below (only extract from the information below, do not include information from above or information that was previously mentioned):
+
+{'output': "Output in terminal after executing the command:\nObtaining file:///app/scalpel\n  Installing build dependencies: started\n  Installing build dependencies: finished with status 'done'\n  Checking if build backend supports build_editable: started\n  Checking if build backend supports build_editable: finished with status 'done'\n  Getting requirements to build editable: started\n  Getting requirements to build editable: finished with status 'done'\n  Preparing editable metadata (pyproject.toml): started\n  Preparing editable metadata (pyproject.toml): finished with status 'done'\nBuilding wheels for collected packages: Scalpel\n  Building editable for Scalpel (pyproject.toml): started\n  Building editable for Scalpel (pyproject.toml): finished with status 'done'\n  Created wheel for Scalpel: filename=scalpel-0.0.1-0.editable-py3-none-any.whl size=8954 sha256=a1fe0eda2e4498e5e40d28f4fc4c9e8cdba140f3acc743b1f6f62630dbd486e8\n  Stored in directory: /tmp/pip-ephem-wheel-cache-cvzish_t/wheels/3d/6f/57/b5bc0a6523dea0b6d3e0c4f367044b5a0851931948689540c1\nSuccessfully built Scalpel\nInstalling collected packages: Scalpel\n  Attempting uninstall: Scalpel\n    Found existing installation: Scalpel 0.0.1\n    Uninstalling Scalpel-0.0.1:\n      Successfully uninstalled Scalpel-0.0.1\nSuccessfully installed Scalpel-0.0.1\nThe current working directory after executing the last command is: /app/scalpel", 'returncode': 0}

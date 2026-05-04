@@ -1,0 +1,16 @@
+----- message[0] role=user -----
+Now, you have to summarize and extract important information from the output of the last command.
+
+Ensure accuracy and relevance, such as software versions, tool names, or lists of requirements.
+
+Your summary and extracted information (extracted dependencies, relevant installation commands, and important links) should have always the following JSON format:
+
+{
+    "summary": "... put summary here...e.g, a possible summary of 'ls' command would be: Project contains `README.rst`, `Dockerfile`, `pyproject.toml`... ",
+    "Setup details:": "Relevant dependencies: ... put newly inferred dependencies... e.g, command results shows that Python3.11 is necessary, or Java 17 is required instead of java 11. \nImportant commands: ...put the list of newly iferred commands that related to the process... e.g, executing init is required before... \nImportant files: ...put the list of files that are highlighted to be important... e.g, the results shows that the file... should be checked...",
+    "Meaningful next setps": "... Based on the result of the command and history of other commands put what would be the next 2 or 3 steps and why they matter in the grand scheme of setting up and installing the project"
+}
+
+Here is the result of the last command, fill in the json dictionary above from the information mentioned below (only extract from the information below, do not include information from above or information that was previously mentioned):
+
+{'output': 'Output in terminal after executing the command:\ntotal 92\ndrwxr-xr-x 1 root root  4096 Apr 30 22:46 .\ndrwxr-xr-x 1 root root  4096 Apr 30 22:43 ..\n-rw-r--r-- 1 root root    35 Apr 30 22:41 .dockerignore\ndrwxr-xr-x 8 root root  4096 Apr 30 22:41 .git\ndrwxr-xr-x 4 root root  4096 Apr 30 22:41 .github\n-rw-r--r-- 1 root root   140 Apr 30 22:41 .gitignore\n-rw-r--r-- 1 root root     0 Apr 30 22:41 .gitmodules\ndrwxr-xr-x 3 root root  4096 Apr 30 22:46 .pytest_cache\n-rw-r--r-- 1 root root  3505 Apr 30 22:41 Dockerfile\n-rw-r--r-- 1 root root  1097 Apr 30 22:41 LICENSE\n-rw-r--r-- 1 root root 10948 Apr 30 22:41 README.md\n-rw-r--r-- 1 root root   302 Apr 30 22:41 book.toml\ndrwxr-xr-x 5 root root  4096 Apr 30 22:41 data\n-rw-r--r-- 1 root root   518 Apr 30 22:41 dep_configs.json\n-rw-r--r-- 1 root root   518 Apr 30 22:41 dep_configs.linux_x64.json\ndrwxr-xr-x 8 root root  4096 Apr 30 22:41 docs\n-rw-r--r-- 1 root root   236 Apr 30 22:41 environment.yml\n-rw-r--r-- 1 root root   182 Apr 30 22:41 environment.yml.1\ndrwxr-xr-x 2 root root  4096 Apr 30 22:41 iclr-2025-results\ndrwxr-xr-x 3 root root  4096 Apr 30 22:41 scripts\ndrwxr-xr-x 7 root root  4096 Apr 30 22:41 src\ndrwxr-xr-x 2 root root  4096 Apr 30 22:41 visualizer\nThe current working directory after executing the last command is: /app', 'returncode': 0}
