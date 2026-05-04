@@ -935,7 +935,8 @@ class ContextBuilder:
                 continue
             try:
                 with open(os.path.join(folder, fn), "r") as f:
-                    results.extend(json.loads(f.read()))
+                    for key, value in json.loads(f.read()).items():
+                        results.append({key:value})
             except Exception:
                 continue
         return results
