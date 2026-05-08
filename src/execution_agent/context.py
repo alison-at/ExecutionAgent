@@ -935,10 +935,13 @@ class ContextBuilder:
                 continue
             try:
                 with open(os.path.join(folder, fn), "r") as f:
-                    for key, value in json.loads(f.read()).items():
-                        results.append({key:value})
+                    data = json.loads(f.read())
             except Exception:
                 continue
+            if isinstance(data, list):
+                results.extend(item for item in data if isinstance(item, dict))
+            elif isinstance(data, dict):
+                results.extend({k: v} for k, v in data.items())
         return results
 
     # ---------- web search functionality ----------
